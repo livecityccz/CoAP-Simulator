@@ -13,12 +13,12 @@
 
 Windows（MinGW/TDM-GCC）：
 ```bash
-gcc -O2 -o coap_demo.exe main.c coap_client.c sensor_sim.c aliyun_sim.c -lws2_32
+gcc -O2 -o coap_simulator.exe main.c coap_client.c sensor_sim.c aliyun_sim.c -lws2_32
 ```
 
 Linux / macOS：
 ```bash
-gcc -O2 -o coap_demo main.c coap_client.c sensor_sim.c aliyun_sim.c
+gcc -O2 -o coap_simulator main.c coap_client.c sensor_sim.c aliyun_sim.c
 ```
 
 ### 运行参数
@@ -35,12 +35,12 @@ gcc -O2 -o coap_demo main.c coap_client.c sensor_sim.c aliyun_sim.c
 
 示例（Windows）：
 ```bash
-coap_demo.exe --period 2 --net ok --type con
+coap_simulator.exe --period 2 --net ok --type con
 ```
 
 示例（Linux/macOS）：
 ```bash
-./coap_demo --period 2 --net ok --type con
+./coap_simulator --period 2 --net ok --type con
 ```
 
 ### 预期日志
